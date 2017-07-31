@@ -1,22 +1,33 @@
+package abstracta;
 
-package polimorfismo;
+import abstracta.Ave;
+import abstracta.Perro;
 
-public class Main extends Figuras2{
-    
+public class Main {
 
-    public Main(int base, int altura) {
-        super(base, altura );
-    }
-    
     public static void main(String[] args) {
         
-        Cuadrado c = new Cuadrado(5, 5 );
-        c.setName("cuadrado  // suma");
-        c.area();
+        Animal p = new Perro("Percy");
+        p.Comer();
+        p.Moverse();
         
-        Triangulo t = new Triangulo(5, 5);
-        t.setName("Triangulo // resta");
-        t.area();
+        Animal a = new Ave("Piolin");
+        a.Comer();
+        a.Moverse();
+
+        
+        
+        
         
     }
+    
+    
+
+   
+
+
+
+    
+    
+    
 }
